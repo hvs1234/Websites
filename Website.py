@@ -1,6 +1,7 @@
 import requests
 from PIL import Image
 import streamlit as slt
+from streamlit_lottie import st_lottie
 slt.set_page_config(page_title="Developer Access",page_icon=":eagle:",layout='wide')
 hide_style = """
     <style>
@@ -9,19 +10,6 @@ hide_style = """
     header {visibility: hidden;}
     </style>
 """
-slt.session_state['answer'] = ''
-
-slt.write(slt.session_state)
-
-realans = ['', 'abc', 'edf']
-
-if  slt.session_state['answer'] in realans:
-    answerStat = "correct"
-elif slt.session_state['answer'] not in realans:
-    answerStat = "incorrect"
-
-slt.write(slt.session_state)
-slt.write(answerStat)
 
 def local_css(file_name):
     with open(file_name) as f:
