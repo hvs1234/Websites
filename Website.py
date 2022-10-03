@@ -1,7 +1,7 @@
 import requests
 from PIL import Image
 import streamlit as slt
-from streamlit_lottie import st_lottie
+import st_lottie
 slt.set_page_config(page_title="Developer Access",page_icon=":eagle:",layout='wide')
 hide_style = """
     <style>
