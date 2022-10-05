@@ -6,4 +6,3 @@ requests==2.25.1
 streamlit==1.13.0
 streamlit_lottie==0.0.3
 plotly==4.14.3
-pandas==2.8.1
