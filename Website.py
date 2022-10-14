@@ -2,7 +2,7 @@ import requests
 from PIL import Image
 import streamlit as slt
 from streamlit_lottie import st_lottie
-slt.set_page_config(page_title="HVS WEB",page_icon=":eagle:",layout='wide')
+slt.set_page_config(page_title="Fun Code",page_icon=":fish:",layout='wide')
 hide_style = """
     <style>
     #MainMenu {visibility: hidden;}
