@@ -2,7 +2,7 @@ import requests
 from PIL import Image
 import streamlit as slt
 from streamlit_lottie import st_lottie
-slt.set_page_config(page_title="Fun Code",page_icon=":fish:",layout='wide')
+slt.set_page_config(page_title="Code Web",page_icon=":fish:",layout='wide')
 hide_style = """
     <style>
     #MainMenu {visibility: hidden;}
@@ -22,7 +22,9 @@ def load(url):
         return None
     return r.json()
 
-lottie_coding  = load("https://assets4.lottiefiles.com/private_files/lf30_wqypnpu5.json")
+lottie_coding1  = load("https://assets4.lottiefiles.com/private_files/lf30_wqypnpu5.json")
+lottie_coding2 = load("https://assets4.lottiefiles.com/private_files/lf30_b8oxhxr5.json")
+
 img1 = Image.open(('/home/harsh/Documents/Python Codes/1.jpeg'))
 #f1 = builtins.open(img1,"rb")
 img2 = Image.open(('/home/harsh/Documents/Python Codes/2.png'))
@@ -50,7 +52,7 @@ with slt.container():
             """
         )
     with right_column:
-        st_lottie(lottie_coding,height=400,key="Coding")
+        st_lottie(lottie_coding1,height=400,key="Coding")
 
 with slt.container():
     slt.write('---')
@@ -82,7 +84,7 @@ with slt.container():
 slt.write('---')
 
 with slt.container():
-    slt.write('Get Touch With Me!'); slt.write("##")
+    slt.write('Get Touch With Me! :thought_balloon:'); slt.write("##")
     contact_form = """
     <form action="https://formsubmit.co/3469harshsharma@gmail.com" method="POST">
      <input type="hidden" name="_captcha" value="false">
@@ -97,6 +99,6 @@ with slt.container():
         slt.markdown(contact_form,unsafe_allow_html=True)
         local_css("style/style.css")
     with right_column:
-        slt.empty()
+        st_lottie(lottie_coding2,height=350,key="Join Us")
 slt.write('---')
 slt.write('If you guys ask me something design a web, so send me your details above. Thanks!!!')
