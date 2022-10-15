@@ -1,4 +1,5 @@
 import requests
+import builtins
 from PIL import Image
 import streamlit as slt
 from streamlit_lottie import st_lottie
@@ -25,10 +26,8 @@ def load(url):
 lottie_coding1  = load("https://assets4.lottiefiles.com/private_files/lf30_wqypnpu5.json")
 lottie_coding2 = load("https://assets4.lottiefiles.com/private_files/lf30_b8oxhxr5.json")
 
-img1 = Image.open(('/home/harsh/Documents/Python Codes/1.jpeg'))
-#f1 = builtins.open(img1,"rb")
-img2 = Image.open(('/home/harsh/Documents/Python Codes/2.png'))
-#f2 = builtins.open(img2,"rb")
+img1 = Image.open(('/home/harsh/Documents/Python Codes/one.jpeg'))
+img2 = Image.open(('/home/harsh/Documents/Python Codes/two.png'))
 slt.subheader('Hi! I am Harsh :wave:')
 slt.title('A Python Web Developer')
 slt.write("I'm passionate finding the ways to use python streamlit and website applications")
