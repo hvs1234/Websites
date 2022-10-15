@@ -1,8 +1,0 @@
-kivymd==1.0.2
-matplotlib==3.5.1
-numpy==1.21.5
-Pillow==9.2.0
-requests==2.25.1
-streamlit==1.13.0
-streamlit_lottie==0.0.3
-plotly==4.14.3
