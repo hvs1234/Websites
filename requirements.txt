@@ -3,3 +3,4 @@ pandas
 requests
 image
 st_lottie
+streamlit_lottie
