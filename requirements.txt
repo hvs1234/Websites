@@ -1,4 +1,4 @@
 streamlit
 pandas
 requests
-PIL
+image
